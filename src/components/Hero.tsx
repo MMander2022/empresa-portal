@@ -1,45 +1,159 @@
-import { motion } from "framer-motion";
-
 export default function Hero() {
-  return (
-    <section className="min-h-screen bg-black text-white flex items-center justify-center px-6">
 
-      <div className="max-w-4xl text-center">
+    return (
 
-        <motion.h1
-          initial={{ opacity: 0, y: -40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="text-6xl md:text-7xl font-bold leading-tight"
+        <section
+            className="container py-5 text-center"
+            style={{
+                minHeight: "90vh",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center"
+            }}
         >
-          Soluciones Tecnológicas Empresariales
-        </motion.h1>
 
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.5 }}
-          className="mt-8 text-xl text-gray-400"
+            <div
+                className="mb-4"
+            >
+
+                <span
+                    className="badge rounded-pill px-4 py-2"
+                    style={{
+                        background: "rgba(37,99,235,.15)",
+                        color: "#60a5fa",
+                        border: "1px solid rgba(96,165,250,.2)"
+                    }}
+                >
+                    Arquitectura Empresarial • Cloud • Fintech
+                </span>
+
+            </div>
+
+            <h1
+                className="fw-bold text-white mb-4"
+                style={{
+                    fontSize: "clamp(3rem,7vw,6rem)",
+                    lineHeight: 1.05
+                }}
+            >
+
+                Soluciones
+                <br />
+
+                <span
+                    style={{
+                        background:
+                            "linear-gradient(135deg,#60a5fa,#2563eb)",
+                        WebkitBackgroundClip: "text",
+                        WebkitTextFillColor: "transparent"
+                    }}
+                >
+                    Tecnológicas
+                </span>
+
+                <br />
+
+                Empresariales
+
+            </h1>
+
+            <p
+                className="mx-auto mb-5"
+                style={{
+                    maxWidth: "850px",
+                    color: "#94a3b8",
+                    fontSize: "1.3rem",
+                    lineHeight: 1.8
+                }}
+            >
+
+                Desarrollo de plataformas modernas,
+                escalables y seguras para empresas,
+                cooperativas y transformación digital.
+
+            </p>
+
+            <div
+                className="d-flex gap-3 justify-content-center flex-wrap"
+            >
+<a
+    href="#proyectos"
+    className="text-decoration-none"
+>
+
+    <div
+        className="d-inline-flex align-items-center gap-3 px-4 py-3 rounded-pill"
+        style={{
+            background:
+                "rgba(255,255,255,.04)",
+            border:
+                "1px solid rgba(255,255,255,.08)",
+            backdropFilter: "blur(12px)",
+            transition: "all .25s ease",
+            cursor: "pointer"
+        }}
+    >
+
+        <div
+            className="d-flex align-items-center justify-content-center rounded-circle"
+            style={{
+                width: "42px",
+                height: "42px",
+                background:
+                    "linear-gradient(135deg,#2563eb,#1d4ed8)"
+            }}
         >
-          Desarrollo de plataformas modernas, seguras y escalables para empresas y cooperativas.
-        </motion.p>
 
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1 }}
-          className="mt-10"
-        >
-          <a
-            href="https://cooperativa.tudominio.com"
-            className="bg-white text-black px-8 py-4 rounded-2xl font-semibold hover:scale-105 transition"
-          >
-            Ver Sistema Cooperativa
-          </a>
-        </motion.div>
+            <i
+                className="bi bi-grid-1x2-fill text-white"
+            ></i>
 
-      </div>
+        </div>
 
-    </section>
-  );
+        <div className="text-start">
+
+            <div
+                style={{
+                    color: "#e2e8f0",
+                    fontWeight: 700,
+                    fontSize: ".95rem"
+                }}
+            >
+                Explorar Proyectos
+            </div>
+
+            <div
+                style={{
+                    color: "#94a3b8",
+                    fontSize: ".8rem"
+                }}
+            >
+                Plataformas empresariales modernas
+            </div>
+
+        </div>
+
+        <i
+            className="bi bi-arrow-down"
+            style={{
+                color: "#60a5fa"
+            }}
+        ></i>
+
+    </div>
+
+</a>
+
+                <button
+                    className="btn btn-outline-light btn-lg px-5 py-3 rounded-pill"
+                >
+                    Ver Proyectos
+                </button>
+
+            </div>
+
+        </section>
+
+    );
+
 }
