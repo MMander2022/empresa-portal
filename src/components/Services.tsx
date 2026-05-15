@@ -4,22 +4,16 @@ export default function Services() {
 
         {
             titulo: "Consultoría TI",
-            descripcion:
-                "Arquitectura empresarial y transformación digital.",
             icono: "bi-diagram-3-fill"
         },
 
         {
             titulo: "Sistemas Financieros",
-            descripcion:
-                "Plataformas modernas para cooperativas y fintech.",
             icono: "bi-bank2"
         },
 
         {
-            titulo: "Cloud & Azure",
-            descripcion:
-                "Infraestructura escalable y segura en la nube.",
+            titulo: "Arquitectura Cloud",
             icono: "bi-cloud-fill"
         }
 
@@ -48,7 +42,7 @@ export default function Services() {
                         color: "#94a3b8"
                     }}
                 >
-                    Soluciones empresariales modernas
+                    Soluciones tecnológicas empresariales
                 </p>
 
             </div>
@@ -59,75 +53,46 @@ export default function Services() {
                     servicios.map((s, i) => (
 
                         <div
-                            className="col-md-4"
+                            className="col-lg-4"
                             key={i}
                         >
 
                             <div
-                                className="rounded-5 p-5 h-100 position-relative overflow-hidden"
+                                className="rounded-5 p-5 h-100"
                                 style={{
                                     background:
-                                        "linear-gradient(135deg,#0f172a,#111827)",
+                                        "rgba(15,23,42,.65)",
                                     border:
-                                        "1px solid rgba(255,255,255,.06)"
+                                        "1px solid rgba(255,255,255,.06)",
+                                    backdropFilter:
+                                        "blur(14px)"
                                 }}
                             >
 
-                                <div
-                                    className="mb-4"
-                                >
+                                <i
+                                    className={`bi ${s.icono}`}
+                                    style={{
+                                        fontSize: "3rem",
+                                        color: "#60a5fa"
+                                    }}
+                                ></i>
 
-                                    <div
-                                        className="d-inline-flex align-items-center justify-content-center rounded-4"
-                                        style={{
-                                            width: "70px",
-                                            height: "70px",
-                                            background:
-                                                "rgba(37,99,235,.12)"
-                                        }}
-                                    >
-
-                                        <i
-                                            className={`${s.icono}`}
-                                            style={{
-                                                fontSize: "2rem",
-                                                color: "#60a5fa"
-                                            }}
-                                        ></i>
-
-                                    </div>
-
-                                </div>
-
-                                <h4
-                                    className="text-white fw-bold mb-3"
+                                <h3
+                                    className="text-white fw-bold my-4"
                                 >
                                     {s.titulo}
-                                </h4>
+                                </h3>
 
-                                <p
+                                <span
+                                    className="badge rounded-pill px-3 py-2"
                                     style={{
-                                        color: "#94a3b8",
-                                        lineHeight: 1.8
+                                        background:
+                                            "rgba(245,158,11,.12)",
+                                        color: "#fbbf24"
                                     }}
                                 >
-                                    {s.descripcion}
-                                </p>
-
-                                <div className="mt-4">
-
-                                    <span
-                                        className="badge rounded-pill px-3 py-2"
-                                        style={{
-                                            background:
-                                                "rgba(245,158,11,.12)",
-                                            color: "#fbbf24"
-                                        }}
-                                    >
-                                        En construcción
-                                    </span>
-
-                                </div>
+                                    En construcción
+                                </span>
 
                             </div>
 

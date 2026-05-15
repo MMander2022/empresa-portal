@@ -3,152 +3,398 @@ export default function Hero() {
     return (
 
         <section
-            className="container py-5 text-center"
             style={{
-                minHeight: "90vh",
+                minHeight: "100vh",
                 display: "flex",
-                flexDirection: "column",
-                justifyContent: "center"
+                alignItems: "center",
+                justifyContent: "center",
+                padding: "120px 24px 80px",
+                position: "relative",
+                overflow: "hidden"
             }}
         >
 
+            {/* Background glow */}
+
             <div
-                className="mb-4"
+                style={{
+                    position: "absolute",
+                    top: "-250px",
+                    right: "-200px",
+                    width: "700px",
+                    height: "700px",
+                    background:
+                        "radial-gradient(circle,#2563eb55 0%,transparent 70%)",
+                    filter: "blur(80px)"
+                }}
+            />
+
+            <div
+                style={{
+                    width: "100%",
+                    maxWidth: "1400px",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "space-between",
+                    gap: "80px",
+                    flexWrap: "wrap"
+                }}
             >
 
-                <span
-                    className="badge rounded-pill px-4 py-2"
+                {/* LEFT */}
+
+                <div
                     style={{
-                        background: "rgba(37,99,235,.15)",
-                        color: "#60a5fa",
-                        border: "1px solid rgba(96,165,250,.2)"
+                        flex: "1 1 620px",
+                        minWidth: "320px"
                     }}
                 >
-                    Arquitectura Empresarial • Cloud • Fintech
-                </span>
 
-            </div>
+                    <div
+                        style={{
+                            marginBottom: "24px"
+                        }}
+                    >
 
-            <h1
-                className="fw-bold text-white mb-4"
-                style={{
-                    fontSize: "clamp(3rem,7vw,6rem)",
-                    lineHeight: 1.05
-                }}
-            >
+                        <span
+                            style={{
+                                background:
+                                    "rgba(96,165,250,.12)",
+                                color: "#93c5fd",
+                                border:
+                                    "1px solid rgba(147,197,253,.2)",
+                                padding:
+                                    "10px 18px",
+                                borderRadius: "999px",
+                                fontSize: ".9rem"
+                            }}
+                        >
+                            Arquitectura Cloud • Fintech • SaaS
+                        </span>
 
-                Soluciones
-                <br />
+                    </div>
 
-                <span
+                    <h1
+                        style={{
+                            fontSize:
+                                "clamp(3.5rem,7vw,6.2rem)",
+                            lineHeight: 1,
+                            fontWeight: 800,
+                            color: "white",
+                            marginBottom: "32px",
+                            letterSpacing: "-4px"
+                        }}
+                    >
+
+                        Plataformas
+
+                        <br />
+
+                        <span
+                            style={{
+                                background:
+                                    "linear-gradient(135deg,#60a5fa,#2563eb)",
+                                WebkitBackgroundClip: "text",
+                                WebkitTextFillColor:
+                                    "transparent"
+                            }}
+                        >
+                            Empresariales
+                        </span>
+
+                        <br />
+
+                        Modernas
+
+                    </h1>
+
+                    <p
+                        style={{
+                            color: "#cbd5e1",
+                            fontSize: "1.25rem",
+                            lineHeight: 1.9,
+                            maxWidth: "680px",
+                            marginBottom: "40px"
+                        }}
+                    >
+
+                        Desarrollo de soluciones tecnológicas
+                        modernas, escalables y seguras para
+                        empresas, fintech y cooperativas.
+
+                    </p>
+
+                    {/* BUTTONS */}
+
+                    <div
+                        style={{
+                            display: "flex",
+                            gap: "16px",
+                            flexWrap: "wrap"
+                        }}
+                    >
+
+                        <a
+                            href="#proyectos"
+                            style={{
+                                background:
+                                    "linear-gradient(135deg,#2563eb,#1d4ed8)",
+                                color: "white",
+                                padding:
+                                    "16px 34px",
+                                borderRadius: "999px",
+                                textDecoration: "none",
+                                fontWeight: 700,
+                                boxShadow:
+                                    "0 10px 30px rgba(37,99,235,.35)",
+                                transition: ".3s"
+                            }}
+                        >
+                            Ver proyectos
+                        </a>
+
+                        <a
+                            href="#contacto"
+                            style={{
+                                background:
+                                    "rgba(255,255,255,.06)",
+                                color: "white",
+                                padding:
+                                    "16px 34px",
+                                borderRadius: "999px",
+                                textDecoration: "none",
+                                border:
+                                    "1px solid rgba(255,255,255,.08)",
+                                backdropFilter:
+                                    "blur(10px)",
+                                fontWeight: 700
+                            }}
+                        >
+                            Contactar
+                        </a>
+
+                    </div>
+
+                </div>
+
+                {/* RIGHT CARD */}
+
+                <div
                     style={{
-                        background:
-                            "linear-gradient(135deg,#60a5fa,#2563eb)",
-                        WebkitBackgroundClip: "text",
-                        WebkitTextFillColor: "transparent"
+                        flex: "1 1 420px",
+                        minWidth: "320px",
+                        display: "flex",
+                        justifyContent: "center"
                     }}
                 >
-                    Tecnológicas
-                </span>
 
-                <br />
+                    <div
+                        style={{
+                            width: "100%",
+                            maxWidth: "480px",
+                            background:
+                                "rgba(15,23,42,.72)",
+                            backdropFilter: "blur(20px)",
+                            border:
+                                "1px solid rgba(255,255,255,.08)",
+                            borderRadius: "36px",
+                            padding: "32px",
+                            boxShadow:
+                                "0 25px 60px rgba(0,0,0,.35)"
+                        }}
+                    >
 
-                Empresariales
+                        <div
+                            style={{
+                                display: "flex",
+                                gap: "8px",
+                                marginBottom: "24px"
+                            }}
+                        >
 
-            </h1>
+                            <div
+                                style={{
+                                    width: "12px",
+                                    height: "12px",
+                                    borderRadius: "50%",
+                                    background: "#ef4444"
+                                }}
+                            />
 
-            <p
-                className="mx-auto mb-5"
-                style={{
-                    maxWidth: "850px",
-                    color: "#94a3b8",
-                    fontSize: "1.3rem",
-                    lineHeight: 1.8
-                }}
-            >
+                            <div
+                                style={{
+                                    width: "12px",
+                                    height: "12px",
+                                    borderRadius: "50%",
+                                    background: "#f59e0b"
+                                }}
+                            />
 
-                Desarrollo de plataformas modernas,
-                escalables y seguras para empresas,
-                cooperativas y transformación digital.
+                            <div
+                                style={{
+                                    width: "12px",
+                                    height: "12px",
+                                    borderRadius: "50%",
+                                    background: "#22c55e"
+                                }}
+                            />
 
-            </p>
+                        </div>
 
-            <div
-                className="d-flex gap-3 justify-content-center flex-wrap"
-            >
-<a
-    href="#proyectos"
-    className="text-decoration-none"
->
+                        <div
+                            style={{
+                                background:
+                                    "linear-gradient(135deg,#1e293b,#0f172a)",
+                                borderRadius: "28px",
+                                padding: "28px"
+                            }}
+                        >
 
-    <div
-        className="d-inline-flex align-items-center gap-3 px-4 py-3 rounded-pill"
-        style={{
-            background:
-                "rgba(255,255,255,.04)",
-            border:
-                "1px solid rgba(255,255,255,.08)",
-            backdropFilter: "blur(12px)",
-            transition: "all .25s ease",
-            cursor: "pointer"
-        }}
-    >
+                            <div
+                                style={{
+                                    display: "flex",
+                                    justifyContent:
+                                        "space-between",
+                                    alignItems: "center",
+                                    marginBottom: "28px"
+                                }}
+                            >
 
-        <div
-            className="d-flex align-items-center justify-content-center rounded-circle"
-            style={{
-                width: "42px",
-                height: "42px",
-                background:
-                    "linear-gradient(135deg,#2563eb,#1d4ed8)"
-            }}
-        >
+                                <span
+                                    style={{
+                                        background:
+                                            "#2563eb",
+                                        color: "white",
+                                        padding:
+                                            "8px 16px",
+                                        borderRadius:
+                                            "999px",
+                                        fontSize: ".85rem",
+                                        fontWeight: 700
+                                    }}
+                                >
+                                    Fintech Core
+                                </span>
 
-            <i
-                className="bi bi-grid-1x2-fill text-white"
-            ></i>
+                                <span
+                                    style={{
+                                        color: "#94a3b8"
+                                    }}
+                                >
+                                    Online
+                                </span>
 
-        </div>
+                            </div>
 
-        <div className="text-start">
+                            <h3
+                                style={{
+                                    color: "white",
+                                    fontWeight: 700,
+                                    marginBottom: "28px"
+                                }}
+                            >
+                                Cooperativa UNIMAS
+                            </h3>
 
-            <div
-                style={{
-                    color: "#e2e8f0",
-                    fontWeight: 700,
-                    fontSize: ".95rem"
-                }}
-            >
-                Explorar Proyectos
-            </div>
+                            <div
+                                style={{
+                                    display: "grid",
+                                    gridTemplateColumns:
+                                        "1fr 1fr",
+                                    gap: "16px"
+                                }}
+                            >
 
-            <div
-                style={{
-                    color: "#94a3b8",
-                    fontSize: ".8rem"
-                }}
-            >
-                Plataformas empresariales modernas
-            </div>
+                                <div
+                                    style={{
+                                        background:
+                                            "rgba(255,255,255,.05)",
+                                        padding: "18px",
+                                        borderRadius: "18px"
+                                    }}
+                                >
 
-        </div>
+                                    <div
+                                        style={{
+                                            color: "#94a3b8",
+                                            marginBottom:
+                                                "6px"
+                                        }}
+                                    >
+                                        Frontend
+                                    </div>
 
-        <i
-            className="bi bi-arrow-down"
-            style={{
-                color: "#60a5fa"
-            }}
-        ></i>
+                                    <div
+                                        style={{
+                                            color: "white",
+                                            fontWeight: 700
+                                        }}
+                                    >
+                                        React + TS
+                                    </div>
 
-    </div>
+                                </div>
 
-</a>
+                                <div
+                                    style={{
+                                        background:
+                                            "rgba(255,255,255,.05)",
+                                        padding: "18px",
+                                        borderRadius: "18px"
+                                    }}
+                                >
 
-                <button
-                    className="btn btn-outline-light btn-lg px-5 py-3 rounded-pill"
-                >
-                    Ver Proyectos
-                </button>
+                                    <div
+                                        style={{
+                                            color: "#94a3b8",
+                                            marginBottom:
+                                                "6px"
+                                        }}
+                                    >
+                                        Backend
+                                    </div>
+
+                                    <div
+                                        style={{
+                                            color: "white",
+                                            fontWeight: 700
+                                        }}
+                                    >
+                                        .NET 8
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <a
+                                href="https://cooperativa.mandersystems.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                style={{
+                                    display: "block",
+                                    width: "100%",
+                                    marginTop: "32px",
+                                    background:
+                                        "linear-gradient(135deg,#2563eb,#1d4ed8)",
+                                    color: "white",
+                                    textAlign: "center",
+                                    padding: "16px",
+                                    borderRadius: "999px",
+                                    textDecoration: "none",
+                                    fontWeight: 700,
+                                    boxShadow:
+                                        "0 10px 30px rgba(37,99,235,.35)"
+                                }}
+                            >
+                                Ingresar a Plataforma
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
 
             </div>
 

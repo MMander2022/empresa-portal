@@ -1,20 +1,20 @@
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import Services from "../components/Services";
-import TechStack from "../components/TechStack";
 import Projects from "../components/Projects";
-import Footer from "../components/Footer";
 import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 
 export default function Home() {
 
     return (
 
         <div
-            className="min-h-screen"
             style={{
                 background:
-                    "linear-gradient(180deg,#020617 0%,#0f172a 100%)"
+                    "radial-gradient(circle at top,#1e3a8a 0%,#020617 45%)",
+                minHeight: "100vh",
+                overflowX: "hidden"
             }}
         >
 
@@ -22,12 +22,12 @@ export default function Home() {
 
             <Hero />
 
-            <TechStack />
-
             <Services />
 
             <Projects />
+
             <Contact />
+
             <Footer />
 
         </div>
