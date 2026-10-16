@@ -29,9 +29,10 @@ export default function Services() {
             <div className="text-center mb-5">
 
                 <h2
-                    className="text-white fw-bold mb-3"
+                    className="fw-bold mb-3"
                     style={{
-                        fontSize: "3rem"
+                        fontSize: "3rem",
+                        color: "#ffffff"
                     }}
                 >
                     Servicios
@@ -58,14 +59,11 @@ export default function Services() {
                         >
 
                             <div
-                                className="rounded-5 p-5 h-100"
+                                className="rounded-4 p-5 h-100"
                                 style={{
-                                    background:
-                                        "rgba(15,23,42,.65)",
-                                    border:
-                                        "1px solid rgba(255,255,255,.06)",
-                                    backdropFilter:
-                                        "blur(14px)"
+                                    background: "rgba(15,23,42,.65)",
+                                    border: "1px solid rgba(255,255,255,.06)",
+                                    backdropFilter: "blur(14px)"
                                 }}
                             >
 
@@ -78,7 +76,8 @@ export default function Services() {
                                 ></i>
 
                                 <h3
-                                    className="text-white fw-bold my-4"
+                                    className="fw-bold my-4"
+                                    style={{ color: "#ffffff" }}
                                 >
                                     {s.titulo}
                                 </h3>
@@ -86,8 +85,7 @@ export default function Services() {
                                 <span
                                     className="badge rounded-pill px-3 py-2"
                                     style={{
-                                        background:
-                                            "rgba(245,158,11,.12)",
+                                        background: "rgba(245,158,11,.12)",
                                         color: "#fbbf24"
                                     }}
                                 >

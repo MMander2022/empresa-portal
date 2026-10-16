@@ -5,8 +5,7 @@ export default function Footer() {
         <footer
             className="text-center py-5"
             style={{
-                borderTop:
-                    "1px solid rgba(255,255,255,.06)"
+                borderTop: "1px solid rgba(255,255,255,.06)"
             }}
         >
 

@@ -1,131 +1,104 @@
 export default function Projects() {
-
     return (
-
-        <section
-            id="proyectos"
-            className="container py-5"
-        >
-
-            <div className="text-center mb-5">
-
-                <h2
-                    className="text-white fw-bold mb-3"
+            <section id="proyectos" className="container py-5">
+                <article
                     style={{
-                        fontSize: "3rem"
+                        maxWidth: "1080px",
+                        margin: "0 auto",
+                        padding: "clamp(24px, 5vw, 48px)",
+                        background: "rgba(5, 12, 23, 0.78)",
+                        border: "1px solid rgba(174, 196, 211, 0.2)",
+                        borderRadius: "10px",
+                        boxShadow: "0 24px 64px rgba(0, 0, 0, 0.24)"
                     }}
                 >
-                    Proyecto Destacado
-                </h2>
+                    <h2
+                        style={{
+                            margin: "0 0 28px",
+                            color: "#f4f7fa",
+                            fontSize: "30px",
+                            fontWeight: 700,
+                            lineHeight: 1.2,
+                            textAlign: "center"
+                        }}
+                    >
+                        Proyecto Destacado
+                    </h2>
 
-            </div>
+                    <h3
+                        style={{
+                            margin: "0 0 16px",
+                            color: "#f4f7fa",
+                            fontSize: "clamp(1.5rem, 2.7vw, 2rem)",
+                            lineHeight: 1.25
+                        }}
+                    >
+                        Sistema UNIMAS
+                    </h3>
 
-            <div
-                className="rounded-5 overflow-hidden"
-                style={{
-                    background:
-                        "linear-gradient(135deg,#0f172a,#111827)",
-                    border:
-                        "1px solid rgba(255,255,255,.06)",
-                    boxShadow:
-                        "0 30px 60px rgba(0,0,0,.35)"
-                }}
-            >
+                    <p
+                        style={{
+                            maxWidth: "760px",
+                            margin: "0 0 24px",
+                            color: "#b1bdc9",
+                            lineHeight: 1.7,
+                            fontSize: "17px",
+                            textAlign: "justify"
+                        }}
+                    >
+                        Solución financiera digital desarrollada con<br />
+                        una arquitectura moderna basada en tecnologías<br />
+                        web y servicios en la nube.
+                    </p>
 
-                <div className="row g-0 align-items-center">
-
-                    <div className="col-lg-6 p-5">
-
-                        <span
-                            className="badge bg-primary mb-4"
-                        >
-                            Fintech
-                        </span>
-
-                        <h2
-                            className="text-white fw-bold mb-4"
-                        >
-                            Plataforma Cooperativa UNIMAS
-                        </h2>
-
-                        <p
-                            style={{
-                                color: "#94a3b8",
-                                lineHeight: 1.9,
-                                fontSize: "1.1rem"
-                            }}
-                        >
-
-                            Sistema financiero cooperativo
-                            desarrollado con arquitectura moderna
-                            basada en React, .NET 8 y Azure Cloud.
-
-                        </p>
-
-                        <div
-                            className="d-flex gap-2 flex-wrap my-4"
-                        >
-
-                            {
-                                ["React", ".NET 8", "Azure", "SQL Server"]
-                                    .map((t) => (
-
-                                        <span
-                                            key={t}
-                                            className="badge rounded-pill px-3 py-2"
-                                            style={{
-                                                background:
-                                                    "rgba(255,255,255,.06)",
-                                                color: "#cbd5e1"
-                                            }}
-                                        >
-                                            {t}
-                                        </span>
-
-                                    ))
-                            }
-
-                        </div>
-
-                        <a
-                            href="https://cooperativa.mandersystems.com"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="btn btn-primary btn-lg rounded-pill px-5 py-3 fw-bold"
-                        >
-                            Ver Plataforma
-                        </a>
-
+                    <div
+                        aria-label="Tecnologías del proyecto"
+                        style={{
+                            display: "flex",
+                            flexWrap: "wrap",
+                            gap: "10px",
+                            marginBottom: "28px"
+                        }}
+                    >
+                        {["React", ".NET 8", "Azure", "SQL Server"].map((technology) => (
+                            <span
+                                key={technology}
+                                style={{
+                                    padding: "8px 13px",
+                                    background: "rgba(255, 255, 255, 0.06)",
+                                    border: "1px solid rgba(174, 196, 211, 0.12)",
+                                    borderRadius: "6px",
+                                    color: "#d2dbe3",
+                                    fontSize: "15px"
+                                }}
+                            >
+                                {technology}
+                            </span>
+                        ))}
                     </div>
 
-                    <div className="col-lg-6 p-5">
-
-                        <div
-                            className="rounded-5 p-4"
-                            style={{
-                                background:
-                                    "rgba(255,255,255,.04)",
-                                border:
-                                    "1px solid rgba(255,255,255,.06)"
-                            }}
-                        >
-
-                            <img
-                                src="https://images.unsplash.com/photo-1556740749-887f6717d7e4"
-                                alt="dashboard"
-                                className="img-fluid rounded-4"
-                            />
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
+                    <a
+                        href="https://cooperativa.mandersystems.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="brand-button brand-button--primary"
+                        style={{
+                            display: "inline-flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                            gap: "10px",
+                            maxWidth: "100%",
+                            padding: "15px 24px",
+                            borderRadius: "6px",
+                            textDecoration: "none",
+                            fontSize: "17px",
+                            fontWeight: 800,
+                            textAlign: "center"
+                        }}
+                    >
+                        Conocer Sistema UNIMAS <span aria-hidden="true">↗</span>
+                    </a>
+                </article>
+            </section>
     );
-
 }

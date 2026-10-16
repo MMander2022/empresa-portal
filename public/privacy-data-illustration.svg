@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 400" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">Protección de datos personales</title>
+  <desc id="desc">Escudo y candado protegen registros digitales personales.</desc>
+  <defs>
+    <linearGradient id="panel" x1="80" y1="38" x2="440" y2="362" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#10263A"/>
+      <stop offset="1" stop-color="#071321"/>
+    </linearGradient>
+    <linearGradient id="shield" x1="261" y1="85" x2="261" y2="311" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#83CDBB"/>
+      <stop offset="1" stop-color="#38BDF8"/>
+    </linearGradient>
+    <linearGradient id="lock" x1="260" y1="160" x2="260" y2="270" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F4FFFC"/>
+      <stop offset="1" stop-color="#A8DCD2"/>
+    </linearGradient>
+    <filter id="glow" x="85" y="31" width="350" height="350" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="22"/>
+    </filter>
+  </defs>
+  <rect x="15" y="15" width="490" height="370" rx="28" fill="url(#panel)" stroke="#31506A" stroke-opacity=".6"/>
+  <circle cx="260" cy="206" r="126" fill="#38BDF8" fill-opacity=".14" filter="url(#glow)"/>
+  <g stroke="#5B7B92" stroke-linecap="round" stroke-opacity=".6" stroke-width="3">
+    <path d="M55 100h86M55 115h54M378 91h87M411 106h54M55 293h91M55 308h54M374 292h91M411 307h54"/>
+    <circle cx="68" cy="82" r="5" fill="#83CDBB" stroke="none"/>
+    <circle cx="452" cy="275" r="5" fill="#38BDF8" stroke="none"/>
+  </g>
+  <path d="M260 76 354 112v72c0 66-39 111-94 137-55-26-94-71-94-137v-72l94-36Z" fill="#0B1A29" stroke="url(#shield)" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M222 188v-17a38 38 0 0 1 76 0v17" stroke="url(#lock)" stroke-width="12" stroke-linecap="round"/>
+  <rect x="204" y="185" width="112" height="84" rx="17" fill="url(#lock)"/>
+  <circle cx="260" cy="220" r="9" fill="#123047"/>
+  <path d="M260 228v17" stroke="#123047" stroke-width="8" stroke-linecap="round"/>
+  <path d="m239 134 13 13 29-30" stroke="#83CDBB" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Mi Proyecto · Design System</title>
+<link rel="stylesheet" href="tokens.css" />
+<link rel="stylesheet" href="components.css" />
+</head>
+<body>
+
+<header class="chrome">
+  <div class="chrome-inner">
+    <div class="chrome-brand">
+      <span class="mark"><span>P</span></span>
+      <div class="title">Mi Proyecto</div>
+      <div class="divider"></div>
+      <div class="sub">Design System · v1.0</div>
+    </div>
+    <div class="chrome-meta">
+      <span><span class="dot live"></span>&nbsp; Documento vivo</span>
+      <span>Design Team · 2026</span>
+    </div>
+    <div class="chrome-user">
+      <div class="avatar">D</div>
+      <div class="name">Diego (preview)</div>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+
+  <section class="section reveal d1">
+    <div class="eyebrow">Design System · Propuesta visual · 14 May 2026</div>
+    <h1 class="t-display serif mt-5" style="max-width:14ch;">
+      Lenguaje visual consistente. Componentes reutilizables. Listo para crecer.
+    </h1>
+    <p class="t-lead mt-7" style="max-width:62ch;">
+      Este es el sistema visual de tu producto. Cuatro páginas para revisar todo lo que se va a construir
+      <em class="c-red" style="font-style:italic">antes</em> de que se construya.
+      Cambiamos un token aquí y todo el producto se actualiza.
+    </p>
+  </section>
+
+  <hr class="hairline" />
+
+  <section class="section">
+    <div class="row-b mb-6" style="align-items:flex-end; gap:24px; flex-wrap:wrap;">
+      <div>
+        <div class="eyebrow">Cuatro páginas</div>
+        <h2 class="t-h2 serif mt-3">Lo que vas a aprobar</h2>
+      </div>
+      <p class="t-body c-sec" style="max-width:36ch; text-align:right;">
+        Si algo te incomoda — una fuente, un botón, el rojo, la densidad — me dices y lo cambio aquí.
+        Iteramos en esta carpeta hasta que sea tuyo.
+      </p>
+    </div>
+
+    <div class="grid grid-2" style="gap:16px;">
+
+      <a class="tile reveal d1" href="00-foundations.html">
+        <div class="tile-num">00</div>
+        <div class="tile-title">Fundamentos<br/><em class="c-mut" style="font-style:italic; font-size:18px;">color, tipografía, espacio, movimiento</em></div>
+        <div class="tile-desc">
+          La paleta completa con sus tokens, la escala tipográfica (Instrument Serif + Geist + JetBrains Mono),
+          la grilla de espaciado y los principios de movimiento.
+        </div>
+        <div class="tile-meta">
+          <span class="dot ok"></span>
+          <span>20+ tokens · 3 familias de fuente</span>
+        </div>
+        <div class="tile-go">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M7 17 L17 7 M9 7 H17 V15"/></svg>
+        </div>
+      </a>
+
+      <a class="tile reveal d2" href="01-components.html">
+        <div class="tile-num">01</div>
+        <div class="tile-title">Componentes<br/><em class="c-mut" style="font-style:italic; font-size:18px;">la librería completa</em></div>
+        <div class="tile-desc">
+          Botones, KPIs, velocímetros, pills, tarjetas, inputs, audio recorder, tabs, charts, file upload, chat.
+          Cada uno con todas sus variantes y reglas de uso.
+        </div>
+        <div class="tile-meta">
+          <span class="dot red"></span>
+          <span>17+ componentes · todas las variantes</span>
+        </div>
+        <div class="tile-go">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M7 17 L17 7 M9 7 H17 V15"/></svg>
+        </div>
+      </a>
+
+      <a class="tile reveal d3" href="02-patterns-desktop.html">
+        <div class="tile-num">02</div>
+        <div class="tile-title">Desktop<br/><em class="c-mut" style="font-style:italic; font-size:18px;">vista de escritorio</em></div>
+        <div class="tile-desc">
+          Patrones y layouts para desktop. Incluye dashboard principal, KPI row, tablas, email, y conversación IA.
+        </div>
+        <div class="tile-meta">
+          <span class="dot warn"></span>
+          <span>≥1024px · navegable</span>
+        </div>
+        <div class="tile-go">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M7 17 L17 7 M9 7 H17 V15"/></svg>
+        </div>
+      </a>
+
+      <a class="tile reveal d4" href="03-patterns-mobile.html">
+        <div class="tile-num">03</div>
+        <div class="tile-title">Mobile<br/><em class="c-mut" style="font-style:italic; font-size:18px;">vista móvil</em></div>
+        <div class="tile-desc">
+          Patrones y flows para mobile. Optimizado para PWA, offline-first, y experiencias táctiles.
+        </div>
+        <div class="tile-meta">
+          <span class="dot blue"></span>
+          <span>PWA · 392×820 · < 3 min/día</span>
+        </div>
+        <div class="tile-go">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M7 17 L17 7 M9 7 H17 V15"/></svg>
+        </div>
+      </a>
+
+      <a class="tile reveal d1" href="04-authentication.html">
+        <div class="tile-num">04</div>
+        <div class="tile-title">Autenticación<br/><em class="c-mut" style="font-style:italic; font-size:18px;">acceso a la plataforma</em></div>
+        <div class="tile-desc">
+          Flujos de login, signup, password reset y verificación de dos factores. Diseñados para conversión y seguridad.
+        </div>
+        <div class="tile-meta">
+          <span class="dot red"></span>
+          <span>Sprint 1 · Crítico</span>
+        </div>
+        <div class="tile-go">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M7 17 L17 7 M9 7 H17 V15"/></svg>
+        </div>
+      </a>
+
+      <a class="tile reveal d2" href="05-alerts-notifications.html">
+        <div class="tile-num">05</div>
+        <div class="tile-title">Alertas<br/><em class="c-mut" style="font-style:italic; font-size:18px;">retroalimentación al usuario</em></div>
+        <div class="tile-desc">
+          Toasts, banners, modales, validación inline, empty states, error pages, loading states, notificaciones.
+        </div>
+        <div class="tile-meta">
+          <span class="dot red"></span>
+          <span>Sprint 1 · Crítico</span>
+        </div>
+        <div class="tile-go">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M7 17 L17 7 M9 7 H17 V15"/></svg>
+        </div>
+      </a>
+
+      <a class="tile reveal d3" href="06-navigation.html">
+        <div class="tile-num">06</div>
+        <div class="tile-title">Navegación<br/><em class="c-mut" style="font-style:italic; font-size:18px;">orientación en la plataforma</em></div>
+        <div class="tile-desc">
+          Sidebar navigation, breadcrumbs, tabs, search bar, filter panels, y paginación. Navegación clara y accesible.
+        </div>
+        <div class="tile-meta">
+          <span class="dot warn"></span>
+          <span>Sprint 1 · Alto</span>
+        </div>
+        <div class="tile-go">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M7 17 L17 7 M9 7 H17 V15"/></svg>
+        </div>
+      </a>
+
+      <a class="tile reveal d4" href="07-tables-forms.html">
+        <div class="tile-num">07</div>
+        <div class="tile-title">Tablas & Formularios<br/><em class="c-mut" style="font-style:italic; font-size:18px;">captura de datos</em></div>
+        <div class="tile-desc">
+          Data tables con sorting y filtrado, formularios avanzados, inputs especializados, editores de texto rico.
+        </div>
+        <div class="tile-meta">
+          <span class="dot warn"></span>
+          <span>Sprint 2 · Importante</span>
+        </div>
+        <div class="tile-go">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M7 17 L17 7 M9 7 H17 V15"/></svg>
+        </div>
+      </a>
+
+      <a class="tile reveal d1" href="08-profile-user.html">
+        <div class="tile-num">08</div>
+        <div class="tile-title">Perfil de Usuario<br/><em class="c-mut" style="font-style:italic; font-size:18px;">identidad y configuración</em></div>
+        <div class="tile-desc">
+          Tarjetas de perfil, página completa con información personal, seguridad, preferencias, actividad y equipo.
+        </div>
+        <div class="tile-meta">
+          <span class="dot blue"></span>
+          <span>Sprint 2 · Importante</span>
+        </div>
+        <div class="tile-go">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M7 17 L17 7 M9 7 H17 V15"/></svg>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- Stats strip -->
+  <section class="section">
+    <div class="eyebrow mb-4">El sistema, en números</div>
+    <div class="grid grid-4" style="gap:0; border:1px solid var(--line); border-radius: var(--r-2); overflow:hidden;">
+      <div style="padding:28px 24px; border-right:1px solid var(--line); border-bottom:1px solid var(--line);">
+        <div class="kpi-label">Tokens de color</div>
+        <div class="serif" style="font-size:56px; line-height:1; letter-spacing:-0.035em;">24</div>
+        <div class="c-sec mt-3" style="font-size:12px;">Surfaces · ink · brand · semantic</div>
+      </div>
+      <div style="padding:28px 24px; border-right:1px solid var(--line); border-bottom:1px solid var(--line);">
+        <div class="kpi-label">Pasos de escala</div>
+        <div class="serif" style="font-size:56px; line-height:1; letter-spacing:-0.035em;">9</div>
+        <div class="c-sec mt-3" style="font-size:12px;">Tipográfica · clamp fluid</div>
+      </div>
+      <div style="padding:28px 24px; border-right:1px solid var(--line); border-bottom:1px solid var(--line);">
+        <div class="kpi-label">Breakpoints</div>
+        <div class="serif" style="font-size:56px; line-height:1; letter-spacing:-0.035em;">6</div>
+        <div class="c-sec mt-3" style="font-size:12px;">Mobile-first · 0 · 600 · 768 · 1024 · 1100 · 1440</div>
+      </div>
+      <div style="padding:28px 24px; border-bottom:1px solid var(--line); position:relative;">
+        <div class="kpi-label">Páginas</div>
+        <div class="serif c-red" style="font-size:56px; line-height:1; letter-spacing:-0.035em;">8</div>
+        <div class="c-sec mt-3" style="font-size:12px;">Fundamentos · componentes · desktop · mobile · auth · alertas · nav · tablas · perfil</div>
+        <div style="position:absolute; top:0; right:0; width:5px; height:36px; background:var(--red);"></div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="hairline" />
+
+  <section class="section">
+    <div class="split-b">
+      <div>
+        <div class="eyebrow mb-3">Cómo iteramos</div>
+        <h3 class="t-h3 serif">Tu palabra<br/>es el push.</h3>
+      </div>
+      <div class="t-body c-sec" style="font-size:15px; line-height:1.7;">
+        <p class="mb-4">
+          Si quieres ver otra fuente — <em class="c-ink" style="font-style:italic">"esto se ve muy serio"</em> — te muestro 3 alternativas
+          aquí mismo. Si el rojo te parece demasiado intenso, lo afinamos en un solo lugar
+          (<code style="background:var(--bg-elevated); padding:2px 6px; border-radius:2px; font-family:var(--mono); font-size:12px;">tokens.css</code>) y
+          todas las páginas se actualizan automáticamente.
+        </p>
+        <p>
+          Cuando esté aprobado, este mismo sistema es lo que entra al build de la PWA — sin sorpresas,
+          sin reinterpretación. Lo que ves aquí es lo que tendrás en Junio.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer-bar">
+    <div class="row-b">
+      <div>Design Team · 2026 · Design System Template</div>
+      <div>Mi Proyecto · v1.0</div>
+    </div>
+  </footer>
+
+</main>
+
+</body>
+</html>
